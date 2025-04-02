@@ -3,64 +3,92 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Rubens Laurent</title>
+  <title>Rubens Laurent - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
-      color: #333;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.6;
     }
     header {
-      background-color: #4a90e2;
-      color: white;
-      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #1e1e1e, #141414);
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
     }
     section {
-      padding: 2rem;
       max-width: 900px;
       margin: auto;
+      padding: 60px 20px;
+      border-bottom: 1px solid #333;
     }
     h2 {
-      border-bottom: 2px solid #4a90e2;
-      padding-bottom: 0.5rem;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #4fc3f7;
+    }
+    ul, p {
+      font-size: 1.1rem;
+      color: #ccc;
     }
     .project {
-      background-color: white;
+      margin-top: 1rem;
       padding: 1rem;
+      background-color: #1e1e1e;
+      border-left: 4px solid #4fc3f7;
+      border-radius: 6px;
       margin-bottom: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
-      padding: 2rem;
-      background-color: #333;
-      color: white;
+      padding: 40px;
+      background: #111;
+      color: #777;
     }
     a {
-      color: #4a90e2;
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Rubens Laurent</h1>
-    <p>Étudiant en BTS SIO - Option SISR | Administrateur Systèmes & Réseaux en alternance</p>
+    <p>Étudiant en BTS SIO - Option SISR | Passionné de réseaux & cybersécurité</p>
   </header>
 
   <section>
     <h2>À propos de moi</h2>
-    <p>Je suis actuellement en <strong>BTS SIO (option SISR)</strong> à l'école <strong>AFTEC </strong> à Vannes. Passionné par l’informatique, je souhaites continué dans cette voie après mon bts.</p>
+    <p>Étudiant en <strong>BTS SIO (option SISR)</strong> à l'école <strong>AFTEC à Vannes</strong>, je suis passionné par les technologies réseau, la cybersécurité et l'administration système. Mon objectif est de poursuivre dans cette voie après mon BTS et d'intégrer des environnements techniques complexes et sécurisés.</p>
   </section>
 
   <section>
     <h2>Parcours scolaire</h2>
     <ul>
-      <li><strong>2023-2025 :</strong> BTS SIO - SISR</li>
-      <li><strong>2022-2023 :</strong> Début d'études en informatique à Nantes</li>
+      <li><strong>2023-2025 :</strong> BTS SIO - SISR (AFTEC Vannes)</li>
+      <li><strong>2022-2023 :</strong> Études d'informatique à Nantes (réorientation)</li>
       <li><strong>2021-2022 :</strong> Bac Général (Maths, SES) - Lycée Saint-Paul, Vannes</li>
     </ul>
   </section>
@@ -68,29 +96,34 @@
   <section>
     <h2>Compétences</h2>
     <ul>
-      <li>Administration systèmes (Debian, Windows Server)</li>
-      <li>Réseaux (Cisco, EVE-NG, VLAN, routage)</li>
-      <li>Cybersécurité (SIEM avec Wazuh, Filebeat, OpenSearch)</li>
-      <li>Web (Apache, HTTPS, OpenSSL)</li>
-      <li>Virtualisation (Proxmox, VM, Cloud)</li>
+      <li>🔧 Administration systèmes : Debian, Windows Server</li>
+      <li>🌐 Réseaux : Cisco, EVE-NG, VLAN, routage</li>
+      <li>🛡️ Cybersécurité : SIEM (Wazuh, Filebeat, OpenSearch)</li>
+      <li>🌍 Web : Apache, HTTPS, OpenSSL</li>
+      <li>☁️ Virtualisation : Proxmox, VM, Cloud</li>
     </ul>
   </section>
 
   <section>
     <h2>Projets</h2>
     <div class="project">
-      <h3>Laboratoire réseau et SIEM</h3>
+      <h3>🔐 Laboratoire réseau et SIEM</h3>
       <p>Montage d’un lab EVE-NG interconnecté à une VM Debian avec SIEM (Wazuh + OpenSearch) pour la collecte et l’analyse de logs Cisco, avec segmentation réseau.</p>
+    </div>
+    <div class="project">
+      <h3>🔒 Configuration HTTPS Apache</h3>
+      <p>Installation d’un serveur Apache sécurisé avec certificat signé par une autorité interne générée via OpenSSL.</p>
+    </div>
   </section>
 
   <section>
     <h2>Contact</h2>
-    <p>Email : <a href="mailto:rubens@example.com">rubens@example.com</a></p>
-    <p>LinkedIn : <a href="#">linkedin.com/in/rubenslaurent</a></p>
+    <p>📧 Email : <a href="mailto:rubens@example.com">rubens@example.com</a></p>
+    <p>💼 LinkedIn : <a href="#">linkedin.com/in/rubenslaurent</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Rubens Laurent - Portfolio personnel</p>
+    <p>&copy; 2025 Rubens Laurent - Tous droits réservés</p>
   </footer>
 </body>
 </html>
