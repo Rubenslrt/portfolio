@@ -10,11 +10,12 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
     body {
       font-family: 'Outfit', sans-serif;
-      background: #0f0f0f;
-      color: #e0e0e0;
+      background: #0a0a0a;
+      color: #f5f5f5;
       line-height: 1.6;
     }
     header {
@@ -23,53 +24,78 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(135deg, #1e1e1e, #141414);
+      padding: 120px 20px 60px;
+      background: linear-gradient(135deg, #1b1b1b, #101010);
     }
     header h1 {
-      font-size: 3rem;
+      font-size: 3.5rem;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      color: #00e5ff;
     }
     header p {
-      font-size: 1.2rem;
-      color: #aaa;
+      font-size: 1.3rem;
+      color: #ccc;
     }
     section {
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
-      padding: 60px 20px;
-      border-bottom: 1px solid #333;
+      padding: 80px 20px;
+      border-bottom: 1px solid #222;
     }
     h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #4fc3f7;
+      font-size: 2.5rem;
+      margin-bottom: 1.2rem;
+      color: #00bcd4;
+      text-transform: uppercase;
     }
     ul, p {
       font-size: 1.1rem;
-      color: #ccc;
+      color: #d0d0d0;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: "➤ ";
+      color: #00e5ff;
     }
     .project {
       margin-top: 1rem;
-      padding: 1rem;
-      background-color: #1e1e1e;
-      border-left: 4px solid #4fc3f7;
-      border-radius: 6px;
-      margin-bottom: 1rem;
+      padding: 1.2rem;
+      background-color: #161616;
+      border-left: 4px solid #00e5ff;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 229, 255, 0.05);
     }
     footer {
       text-align: center;
-      padding: 40px;
-      background: #111;
+      padding: 50px 20px;
+      background: #0f0f0f;
       color: #777;
+      font-size: 0.95rem;
     }
     a {
-      color: #4fc3f7;
+      color: #00e5ff;
       text-decoration: none;
+      transition: color 0.3s;
     }
     a:hover {
+      color: #4fc3f7;
       text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      section {
+        padding: 60px 16px;
+      }
     }
   </style>
 </head>
